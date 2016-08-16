@@ -1,0 +1,139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'node',
+1 verbose cli   'v5.5.0' ]
+2 info using npm@3.3.12
+3 info using node@v5.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node
+8 silly fetchPackageMetaData v5.5.0
+9 silly fetchNamedPackageData node
+10 silly mapToRegistry name node
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/node
+14 silly fetchNamedPackageData v5.5.0
+15 silly mapToRegistry name v5.5.0
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/v5.5.0
+19 verbose request uri https://registry.npmjs.org/node
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 8:02:16 AM
+22 verbose request id 99c7c48928e06f87
+23 http request GET https://registry.npmjs.org/node
+24 verbose request uri https://registry.npmjs.org/v5.5.0
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 8:02:16 AM
+27 http request GET https://registry.npmjs.org/v5.5.0
+28 http 404 https://registry.npmjs.org/v5.5.0
+29 verbose headers { 'content-type': 'application/json',
+29 verbose headers   'cache-control': 'max-age=0',
+29 verbose headers   'content-length': '2',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Tue, 16 Aug 2016 06:00:37 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   age: '0',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'x-served-by': 'cache-ams4438-AMS',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1471327237.293256,VS0,VE405',
+29 verbose headers   vary: 'Accept-Encoding' }
+30 silly get cb [ 404,
+30 silly get   { 'content-type': 'application/json',
+30 silly get     'cache-control': 'max-age=0',
+30 silly get     'content-length': '2',
+30 silly get     'accept-ranges': 'bytes',
+30 silly get     date: 'Tue, 16 Aug 2016 06:00:37 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     age: '0',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-ams4438-AMS',
+30 silly get     'x-cache': 'MISS',
+30 silly get     'x-cache-hits': '0',
+30 silly get     'x-timer': 'S1471327237.293256,VS0,VE405',
+30 silly get     vary: 'Accept-Encoding' } ]
+31 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/v5.5.0
+31 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+31 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+31 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+31 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+31 silly fetchPackageMetaData     at emitTwo (events.js:100:13)
+31 silly fetchPackageMetaData     at Request.emit (events.js:185:7)
+31 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+31 silly fetchPackageMetaData     at emitOne (events.js:95:20)
+31 silly fetchPackageMetaData     at Request.emit (events.js:182:7)
+31 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+31 silly fetchPackageMetaData  error for v5.5.0 { [Error: Registry returned 404 for GET on https://registry.npmjs.org/v5.5.0] pkgid: 'v5.5.0', statusCode: 404, code: 'E404' }
+32 http 200 https://registry.npmjs.org/node
+33 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 verbose headers   etag: '"4RB0I162TMBFF7IWMPCBRMD3L"',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'content-encoding': 'gzip',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '569',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 16 Aug 2016 06:00:37 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   age: '0',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-ams4451-AMS',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1471327237.293052,VS0,VE413',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 silly get cb [ 200,
+34 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+34 silly get     etag: '"4RB0I162TMBFF7IWMPCBRMD3L"',
+34 silly get     'content-type': 'application/json',
+34 silly get     'content-encoding': 'gzip',
+34 silly get     'cache-control': 'max-age=300',
+34 silly get     'content-length': '569',
+34 silly get     'accept-ranges': 'bytes',
+34 silly get     date: 'Tue, 16 Aug 2016 06:00:37 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     age: '0',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-ams4451-AMS',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1471327237.293052,VS0,VE413',
+34 silly get     vary: 'Accept-Encoding' } ]
+35 verbose get saving node to /Users/Beth/.npm/registry.npmjs.org/node/.cache.json
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Starting
+39 silly runTopLevelLifecycles Finishing
+40 silly install printInstalled
+41 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/v5.5.0
+41 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+41 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+41 verbose stack     at emitTwo (events.js:100:13)
+41 verbose stack     at Request.emit (events.js:185:7)
+41 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+41 verbose stack     at emitOne (events.js:95:20)
+41 verbose stack     at Request.emit (events.js:182:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+42 verbose statusCode 404
+43 verbose pkgid v5.5.0
+44 verbose cwd /Users/Beth/circle
+45 error Darwin 13.4.0
+46 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "node" "v5.5.0"
+47 error node v5.5.0
+48 error npm  v3.3.12
+49 error code E404
+50 error 404 Registry returned 404 for GET on https://registry.npmjs.org/v5.5.0
+50 error 404
+50 error 404 'v5.5.0' is not in the npm registry.
+50 error 404 You should bug the author to publish it (or use the name yourself!)
+50 error 404
+50 error 404 Note that you can also install from a
+50 error 404 tarball, folder, http url, or git url.
+51 verbose exit [ 1, true ]
